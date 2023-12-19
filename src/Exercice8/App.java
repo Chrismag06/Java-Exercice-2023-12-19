@@ -14,8 +14,6 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         int[] tab = new int[10];
-        int[] T1 = new int[10];
-        int[] T2 = new int[10];
         int nbPair = 0;
         int nbImpair = 0;
         int i;
@@ -28,11 +26,24 @@ public class App {
             System.out.printf("Reste à saisir %d \n", nbResteASaisir);
             tab[i] = scanner.nextInt();
             if (tab[i] % 2 == 0) {
+                nbPair++;
+            } else {
+                nbImpair++;
+            }
+            nbResteASaisir--;
+        }
+
+        int[] T1 = new int[nbPair];
+        int[] T2 = new int[nbImpair];
+
+        nbPair = 0;
+        nbImpair = 0;
+        for (i = 0; i < tab.length; i++) {
+            if (tab[i] % 2 == 0) {
                 T1[nbPair++] = tab[i];
             } else {
                 T2[nbImpair++] = tab[i];
             }
-            nbResteASaisir--;
         }
 
         System.out.println("Premier tableau saisie:");
@@ -41,7 +52,7 @@ public class App {
         }
         System.out.println("");
 
-        System.out.println("\ntableau pair:");
+        System.out.println("\ntableau paire:");
         i = 0;
         while (i < nbPair) {
             System.out.printf("%d ", T1[i]);
@@ -49,7 +60,7 @@ public class App {
         }
         System.out.println("");
 
-        System.out.println("\ntableau impair:");
+        System.out.println("\ntableau impaire:");
         i = 0;
         while (i < nbImpair) {
             System.out.printf("%d ", T2[i]);
