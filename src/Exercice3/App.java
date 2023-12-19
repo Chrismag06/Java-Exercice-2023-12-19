@@ -19,8 +19,8 @@ public class App {
         System.out.printf("Les entiers saisie sont A: %d et B : %d \n", A, B);
 
         int C = A;
-         A = B;
-         B = C;
+        A = B;
+        B = C;
 
         System.out.printf("Après changement les deux saisies sont A: %d et B: %d \n", A, B);
 
