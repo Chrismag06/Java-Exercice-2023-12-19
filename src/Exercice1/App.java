@@ -18,6 +18,8 @@ public class App {
 
         int AgeEnfant = scanner.nextInt();
 
+        //Please be informed that the developpers knows that switch statement exist but he did like this as trainning purpose
+
         String type = (AgeEnfant >= 12) ? "cadet"
                 : (AgeEnfant >= 10) ? "minime"
                         : (AgeEnfant >= 8) ? "pupille" : (AgeEnfant >= 6) ? "poussin" : "out of scope";
