@@ -19,7 +19,7 @@ public class App {
         System.out.println("Veuillez saisir un prix total HT");
         double prixTotalHT = scanner.nextDouble();
 
-        double prixTotalTTC = prixTotalHT * TVA / 100 + prixTotalHT;
+        double prixTotalTTC = prixTotalHT * (TVA / 100 + 1);
 
         System.out.print("Le montant TTC  ");
         if (prixTotalHT > montantPourReduction) {
