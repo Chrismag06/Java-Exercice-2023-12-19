@@ -27,7 +27,7 @@ public class App {
             System.out.print("après réduction ");
         }
 
-        System.out.printf("est %f \n", prixTotalTTC);
+        System.out.printf("est %.2f \n", prixTotalTTC);
         
         scanner.close();
     }
