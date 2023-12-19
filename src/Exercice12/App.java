@@ -23,11 +23,10 @@ public class App {
 
         Scanner scanner = new Scanner(System.in);
 
-        int min = 1;
         int max = 20;
         int nombreSaisie;
 
-        int randomNumber = (int) (Math.random() * (max - min + 1) + min);
+        int randomNumber = (int) (Math.random() * max);
         System.out.println(randomNumber);
 
         System.out.println("Essayez de deviner le nombre généré aléatoirement par l'ordinateur ");
