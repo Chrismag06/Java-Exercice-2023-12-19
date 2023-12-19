@@ -28,11 +28,9 @@ public class App {
             System.out.printf("Reste à saisir %d \n", nbResteASaisir);
             tab[i] = scanner.nextInt();
             if (tab[i] % 2 == 0) {
-                T1[nbPair] = tab[i];
-                nbPair++;
+                T1[nbPair++] = tab[i];
             } else {
-                T2[nbImpair] = tab[i];
-                nbImpair++;
+                T2[nbImpair++] = tab[i];
             }
             nbResteASaisir--;
         }
