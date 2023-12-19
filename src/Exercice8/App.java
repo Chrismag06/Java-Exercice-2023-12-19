@@ -47,25 +47,20 @@ public class App {
         }
 
         System.out.println("Premier tableau saisie:");
-        for (i = 0; i < tab.length; i++) {
+        for (i = 0; i < tab.length; i++) 
             System.out.printf("%d ", tab[i]);
-        }
         System.out.println("");
 
         System.out.println("\ntableau paire:");
         i = 0;
-        while (i < nbPair) {
-            System.out.printf("%d ", T1[i]);
-            i++;
-        }
+        while (i < nbPair) 
+            System.out.printf("%d ", T1[i++]);
         System.out.println("");
 
         System.out.println("\ntableau impaire:");
         i = 0;
-        while (i < nbImpair) {
-            System.out.printf("%d ", T2[i]);
-            i++;
-        }
+        while (i < nbImpair) 
+            System.out.printf("%d ", T2[i++]);
 
         scanner.close();
 

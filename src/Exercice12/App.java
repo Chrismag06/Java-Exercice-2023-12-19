@@ -19,6 +19,8 @@ public class App {
         // nécessaires pour deviner le nombre est inconnu à l'avance.
         // La boucle while continue tant que la condition spécifiée est vraie.
 
+        //my se
+
         Scanner scanner = new Scanner(System.in);
 
         int min = 1;
